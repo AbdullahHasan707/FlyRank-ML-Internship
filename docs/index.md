@@ -132,6 +132,8 @@ The machine-learning model was evaluated against the Week 4 rule-based baseline 
 
 The comparison shows that the machine-learning approach provides useful improvement over the manually defined baseline on the same evaluation split.
 
+![Model vs Baseline](model_vs_baseline.png)
+
 ### Feature Importance
 
 The Random Forest model identified the following features as the most important:
@@ -142,6 +144,8 @@ The Random Forest model identified the following features as the most important:
 | content_age_days  |   0.261159 |
 | ctr               |   0.170960 |
 | engagement_rate   |   0.096394 |
+
+![Feature Importance](feature_importance.png)
 
 ### Interpretation
 
