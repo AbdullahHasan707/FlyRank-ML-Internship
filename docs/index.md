@@ -123,20 +123,18 @@ The validation process was designed to reduce the risk of evaluating the model u
 
 ### Model vs Baseline
 
-The machine-learning model was evaluated against the Week 4 rule-based baseline using the same evaluation design.
+The machine-learning model was evaluated against the Week 4 rule-based baseline using the same evaluation design and the same validation split.
 
 | Approach              | Metric   | Result |
 |-----------------------|----------|--------|
 | Rule-based baseline   | Accuracy | 0.4417 |
 | Random Forest         | Accuracy | 0.6370 |
 
-The comparison shows that the machine-learning approach provides useful improvement over the manually defined baseline on the same evaluation split.
+The Random Forest improved accuracy from 0.44 to 0.64. This shows a clear lift over the hand-written rule, but the absolute performance should still be treated as directional rather than production-ready.
 
 ![Model vs Baseline](model_vs_baseline.png)
 
 ### Feature Importance
-
-The Random Forest model identified the following features as the most important:
 
 | Feature           | Importance |
 |-------------------|-----------:|
@@ -149,13 +147,11 @@ The Random Forest model identified the following features as the most important:
 
 ### Interpretation
 
-The Random Forest model placed the greatest importance on `avg_position` (approximately 0.47).
+The model placed the greatest importance on `avg_position` (~0.47). In this dataset, a page’s current average search position was the strongest observed signal associated with the content-opportunity label.
 
-This indicates that a page’s average search position was the strongest observed signal associated with the content-opportunity label in this analysis.
+`content_age_days` ranked second, which is consistent with the idea that older content is more likely to need review. CTR and engagement rate contributed smaller amounts of predictive information in this particular model and feature set.
 
-`content_age_days` was the second most important feature, followed by `ctr` and `engagement_rate`.
-
-These values describe how the model weighted the available features within this particular dataset and validation setup. They should not be interpreted as causal evidence that changing any single feature will produce a specific search ranking or traffic outcome.
+These importance values describe model behavior within the available data and validation setup. They should not be read as causal evidence that changing any single feature will improve rankings or traffic.
 
 ---
 
