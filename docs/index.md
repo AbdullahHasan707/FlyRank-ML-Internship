@@ -184,30 +184,36 @@ They do not establish that the model causes improved search rankings or that a r
 
 ## 7. Ranked Recommendations
 
-The model output is converted into a practical content action queue.
+The model output is converted into a practical content action queue. Each page receives one of three recommended actions based on the strength of its opportunity signals.
 
 ### Priority 1 — Refresh
 
-Pages with strong signals of declining or outdated performance should receive the highest review priority.
+**When to use:** Pages with strong signals of declining or outdated performance (typically high opportunity score combined with weaker average position or older content age).
+
+These pages should receive the highest review priority.
 
 Recommended checks include:
 
-- Content freshness
-- Search intent alignment
-- Coverage of important topics
-- Outdated information
-- Internal linking
-- Title and description quality
+- Content freshness and accuracy of key facts
+- Alignment with current search intent
+- Coverage of important related topics
+- Quality of title and meta description
+- Internal linking to and from the page
+- Removal or update of outdated information
 
 ### Priority 2 — Review
 
-Pages with mixed or moderate signals should receive human review before action.
+**When to use:** Pages with mixed or moderate signals. The model suggests potential opportunity, but the evidence is not strong enough for automatic action.
+
+These pages should receive human review before any content changes are made.
+
+A reviewer should decide whether the page needs a light update, a deeper refresh, or can safely wait.
 
 ### Priority 3 — Leave / Monitor
 
-Pages without strong opportunity signals should not automatically be changed.
+**When to use:** Pages without strong opportunity signals. Current performance does not indicate an urgent need for change.
 
-They can remain under monitoring and be reassessed as new performance data becomes available.
+These pages should not be automatically edited. They can remain under monitoring and be reassessed when new performance data becomes available.
 
 ---
 
